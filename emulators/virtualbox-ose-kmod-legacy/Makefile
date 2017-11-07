@@ -3,10 +3,9 @@
 
 PORTNAME=	virtualbox-ose
 PORTVERSION=	5.1.28
-PKGNAMESUFFIX= -legacy
 CATEGORIES=	emulators
 MASTER_SITES=	http://download.virtualbox.org/virtualbox/${PORTVERSION}/
-PKGNAMESUFFIX=	-kmod
+PKGNAMESUFFIX=	-kmod-legacy
 DISTNAME=	VirtualBox-${PORTVERSION}
 
 MAINTAINER=	vbox@FreeBSD.org
@@ -21,7 +20,7 @@ CPE_VENDOR=	oracle
 CPE_PRODUCT=	vm_virtualbox
 
 USES=		cpe kmod tar:bzip2
-PATCHDIR=	${.CURDIR}/../${PORTNAME}/files
+PATCHDIR=	${.CURDIR}/../${PORTNAME}-legacy/files
 WRKSRC=		${WRKDIR}/VirtualBox-${PORTVERSION}
 USE_RC_SUBR=	vboxnet
 ONLY_FOR_ARCHS=	i386 amd64

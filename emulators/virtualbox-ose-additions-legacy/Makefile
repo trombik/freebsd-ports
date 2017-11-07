@@ -3,10 +3,9 @@
 
 PORTNAME=	virtualbox-ose
 PORTVERSION=	5.1.28
-PKGNAMESUFFIX= -legacy
 CATEGORIES=	emulators
 MASTER_SITES=	http://download.virtualbox.org/virtualbox/${PORTVERSION}/
-PKGNAMESUFFIX?=	-additions
+PKGNAMESUFFIX?=	-additions-legacy
 DISTNAME=	VirtualBox-${PORTVERSION}
 
 MAINTAINER=	vbox@FreeBSD.org
@@ -21,7 +20,7 @@ BUILD_DEPENDS=	yasm:devel/yasm \
 CPE_VENDOR=	oracle
 CPE_PRODUCT=	vm_virtualbox
 
-PATCHDIR=	${.CURDIR}/../${PORTNAME}/files
+PATCHDIR=	${.CURDIR}/../${PORTNAME}-legacy/files
 WRKSRC=		${WRKDIR}/VirtualBox-${PORTVERSION}
 USE_RC_SUBR=	vboxguest vboxservice
 USES=		compiler:features cpe iconv kmod python:build tar:bzip2

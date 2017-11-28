@@ -1,0 +1,12 @@
+When selecting `Layers` tab in the GUI on CURRENT, the application crushes.
+
+<jemalloc>: jemalloc_rtree.c:205: Failed assertion: "!dependent || leaf != NULL"
+
+Also, at exit, it crushes, too.
+
+<jemalloc>: /usr/src/contrib/jemalloc/include/jemalloc/internal/extent_inlines.h:63: Failed assertion: "szind < NSIZES"
+
+Unfortunately, these issues cannot be diagnosed until another issue in lldb(1)
+is fixed.
+
+https://bugs.llvm.org/show_bug.cgi?id=36224

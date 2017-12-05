@@ -801,6 +801,7 @@ chronyd:*:849:849::0:0:chronyd user:/nonexistent:/usr/sbin/nologin
 # free: 851
 # free: 852
 # free: 853
+dyndnsd:*:853:853::0:0:dyndnsd user:/nonexistent:/usr/sbin/nologin
 # free: 854
 # free: 855
 # free: 856

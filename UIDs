@@ -800,7 +800,7 @@ chronyd:*:849:849::0:0:chronyd user:/nonexistent:/usr/sbin/nologin
 # free: 851
 # free: 852
 _geodns:*:853:853::0:0:GeoDNS User:/var/empty:/usr/sbin/nologin
-# free: 854
+dyndnsd:*:854:854::0:0:dyndnsd user:/nonexistent:/usr/sbin/nologin
 # free: 855
 # free: 856
 # free: 857

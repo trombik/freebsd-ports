@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	libArcus
-PORTVERSION=	2.7.0
+PORTVERSION=	3.0.3
 CATEGORIES=	devel
 
 MAINTAINER=	y@trombik.org

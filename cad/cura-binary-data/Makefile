@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	cura-binary-data
-PORTVERSION=	2.7.0
+PORTVERSION=	3.0.3
 CATEGORIES=	cad
 
 MAINTAINER=	y@trombik.org

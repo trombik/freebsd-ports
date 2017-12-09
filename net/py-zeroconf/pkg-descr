@@ -1,0 +1,5 @@
+This is fork of pyzeroconf, Multicast DNS Service Discovery for Python,
+originally by Paul Scott-Murphy (https://github.com/paulsm/pyzeroconf),
+modified by William McBrine (https://github.com/wmcbrine/pyzeroconf).
+
+WWW: https://pypi.python.org/pypi/zeroconf

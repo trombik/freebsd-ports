@@ -18,6 +18,7 @@ RUN_DEPENDS=	CuraEngine>0:cad/CuraEngine \
 	${PYTHON_PKGNAMEPREFIX}serial>0:comms/py-serial \
 	${PYTHON_SITELIBDIR}/PyQt5/QtQuick.so:x11-toolkits/py-qt5-quick \
 	${PYTHON_SITELIBDIR}/PyQt5/QtOpenGL.so:x11/py-qt5-opengl \
+	${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf \
 	cura-binary-data>0:cad/cura-binary-data
 
 USES=		python:3.5+ cmake pyqt:5 fortran

@@ -12,12 +12,12 @@
              self._addRemovePorts(result)
              time.sleep(5)
  
-@@ -162,6 +165,8 @@ class USBPrinterOutputDeviceManager(QObject, OutputDev
+@@ -161,6 +164,8 @@ class USBPrinterOutputDeviceManager(QObject, OutputDev
+         machine_has_heated_bed = global_container_stack.getProperty("machine_heated_bed", "value")
  
          if platform.system() == "Linux":
-             baudrate = 115200
-+        elif platform.system() == "FreeBSD":
 +            baudrate = 115200
++        elif platform.system() == "FreeBSD":
+             baudrate = 115200
          else:
              baudrate = 250000
- 

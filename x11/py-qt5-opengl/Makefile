@@ -7,7 +7,7 @@ CATEGORIES=	x11 devel python
 MAINTAINER=	kde@FreeBSD.org
 COMMENT=	Python bindings for the Qt5 toolkit, QtOpenGL module
 
-CONFIGURE_ARGS=	--enable QtOpenGL --enable _QOpenGLFunctions_4_1_Core
+CONFIGURE_ARGS=	--enable QtOpenGL
 PYQT_DIST=	yes
 
 USES=		python pyqt:5

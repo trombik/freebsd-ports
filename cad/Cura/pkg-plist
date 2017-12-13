@@ -1,5 +1,6 @@
 @comment $FreeBSD$
 bin/cura
+bin/cura_app
 lib/cura/plugins/3MFReader/ThreeMFReader.py
 lib/cura/plugins/3MFReader/ThreeMFWorkspaceReader.py
 lib/cura/plugins/3MFReader/WorkspaceDialog.py

@@ -5,9 +5,9 @@ PORTNAME=	bind
 PORTVERSION=	${ISCVERSION:S/-P/P/:S/b/.b/:S/a/.a/:S/rc/.rc/}
 .if defined(BIND_TOOLS_SLAVE)
 # dns/bind-tools here
-PORTREVISION=	1
+PORTREVISION=	0
 .else
-# dns/bind9xx here
+# dns/bind912 here
 PORTREVISION=	1
 .endif
 CATEGORIES=	dns net ipv6
@@ -30,7 +30,7 @@ LICENSE=	MPL20
 LICENSE_FILE=	${WRKSRC}/COPYRIGHT
 
 # ISC releases things like 9.8.0-P1, which our versioning doesn't like
-ISCVERSION=	9.12.0b1
+ISCVERSION=	9.12.0b2
 
 USES=	cpe libedit
 

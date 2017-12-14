@@ -1,3 +1,4 @@
+@comment $FreeBSD$
 %%PYTHON_SITELIBDIR%%/UM/Application.py
 %%PYTHON_SITELIBDIR%%/UM/Backend/Backend.py
 %%PYTHON_SITELIBDIR%%/UM/Backend/SignalSocket.py

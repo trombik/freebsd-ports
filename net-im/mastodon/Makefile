@@ -3,7 +3,7 @@
 PORTNAME=	mastodon
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.0.0
-PORTREVISION=	2
+PORTREVISION=	4
 CATEGORIES=	net-im www
 
 MAINTAINER=	jrm@FreeBSD.org
@@ -45,7 +45,7 @@ BR_DEPENDS=	ffmpeg>0:multimedia/ffmpeg \
 		rubygem-hiredis>=0.6.1:databases/rubygem-hiredis \
 		rubygem-redis-namespace>=1.5.3:databases/rubygem-redis-namespace \
 		rubygem-htmlentities>=4.3.4:textproc/rubygem-htmlentities \
-		rubygem-http>=2.2.2:www/rubygem-http \
+		rubygem-http2>=2.2.2:www/rubygem-http2 \
 		rubygem-http_accept_language>=2.1.1:devel/rubygem-http_accept_language \
 		rubygem-httplog>=0.99.7:sysutils/rubygem-httplog \
 		rubygem-idn-ruby>=0.1.0:dns/rubygem-idn-ruby \
@@ -96,7 +96,7 @@ USE_RC_SUBR=	mastodon_stream mastodon_web mastodon_workers
 USE_RUBY=	yes
 
 NODE_BIN=	${LOCALBASE}/bin/node
-NODE_ABI=	${NODE_VER:C/v4.*/46/:C/v6.*/48/:C/v8.*/57/}
+NODE_ABI=	${NODE_VER:C/v4.*/46/:C/v6.*/48/:C/v8.*/57/:C/v9.*/59/}
 PLIST_SUB=	NODE_ABI=${NODE_ABI}
 
 SHEBANG_FILES=	bin/*

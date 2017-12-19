@@ -3,6 +3,7 @@
 
     COMMENT = Audio tools
 
+    SUBDIR += GxSwitchlessWah-lv2
     SUBDIR += HVSC-Update
     SUBDIR += Maaate
     SUBDIR += aacgain
@@ -370,7 +371,6 @@
     SUBDIR += ladspa
     SUBDIR += lame
     SUBDIR += lash
-    SUBDIR += last.fm
     SUBDIR += lastfm-desktop
     SUBDIR += liba52
     SUBDIR += libaacplus

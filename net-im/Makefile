@@ -3,7 +3,6 @@
 
     COMMENT = Instant messaging
 
-    SUBDIR += bsflite
     SUBDIR += centerim
     SUBDIR += centerim-devel
     SUBDIR += chattahoochie
@@ -123,7 +122,6 @@
     SUBDIR += pidgin-twitter
     SUBDIR += plasma-applet-ktp
     SUBDIR += poezio
-    SUBDIR += pork
     SUBDIR += profanity
     SUBDIR += prosody
     SUBDIR += prosody-modules
@@ -169,6 +167,7 @@
     SUBDIR += skype4
     SUBDIR += teamwords
     SUBDIR += telegram
+    SUBDIR += telegram-desktop
     SUBDIR += telegram-purple
     SUBDIR += telegramqml
     SUBDIR += telepathy-accounts-signon

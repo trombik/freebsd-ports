@@ -1,0 +1,31 @@
+# listen address and port
+host: "0.0.0.0"
+port: "8245"
+# optional: drop priviliges in case you want to but you may need sudo for external commands
+user: "%%DYNDNSD_USER%%"
+group: "%%DYNDNSD_GROUP%%"
+# logfile is optional, logs to STDOUT else
+logfile: "%%DYNDNSD_LOG_DIR%%/dyndnsd.log"
+# interal database file
+db: "%%DYNDNSD_DB_DIR%%/db.json"
+# all hostnames are required to be cool-name.example.org
+domain: "example.org"
+# configure the updater, here we use command_with_bind_zone, params are updater-specific
+updater:
+  name: "command_with_bind_zone"
+  params:
+    zone_file: "%%DYNDNSD_ZONE_DIR%%/dyn.zone"
+    command: "echo 'Hello'"
+    ttl: "5m"
+    dns: "dns.example.org."
+    email_addr: "admin.example.org."
+# user database with hostnames a user is allowed to update
+users:
+  # 'foo' is username, 'secret' the password
+  foo:
+    password: "secret"
+    hosts:
+      - foo.example.org
+      - bar.example.org
+  test:
+    password: "ihavenohosts"

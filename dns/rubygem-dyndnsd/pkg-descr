@@ -1,0 +1,4 @@
+dyndnsd.rb aims to implement a small DynDNS-compliant server in Ruby
+supporting IPv4 and IPv6 addresses.
+
+WWW: http://rubygems.org/gems/dyndnsd

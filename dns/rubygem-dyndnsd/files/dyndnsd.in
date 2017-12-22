@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# $FreeBSD$
+# PROVIDE: dyndnsd
+# REQUIRE: DAEMON
+# KEYWORD: shutdown
+#
+# Add these lines to /etc/rc.conf.local or /etc/rc.conf to enable this
+# service:
+#
+# dyndnsd_enable (bool):    Set to NO by default.
+# dyndnsd_config (path):    Set to %%PREFIX%%/etc/dyndnsd/config.yml by
+# default
+
+. /etc/rc.subr
+
+name=dyndnsd
+rcvar=dyndnsd_enable
+
+load_rc_config $name
+
+: ${dyndnsd_enable:="NO"}
+: ${dyndnsd_config="%%PREFIX%%/etc/dyndnsd/config.yml"}
+
+command="/usr/sbin/daemon"
+required_files="$dyndnsd_config"
+dyndnsd_cmd="%%PREFIX%%/bin/${name}"
+pidfile="/var/run/${name}.pid"
+command_args="-fp ${pidfile} ${dyndnsd_cmd} ${dyndnsd_config}"
+procname=${dyndnsd_cmd}
+command_interpreter=%%RUBY%%
+
+run_rc_command "$1"

@@ -13,23 +13,27 @@ LICENSE_FILE=	${WRKSRC}/LICENSE
 
 BUILD_DEPENDS= ${PYTHON_PKGNAMEPREFIX}uranium=${PORTVERSION}:devel/py-uranium
 RUN_DEPENDS=	\
-	${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy \
-	${PYTHON_PKGNAMEPREFIX}serial>0:comms/py-serial \
-	${PYTHON_PKGNAMEPREFIX}uranium=${PORTVERSION}:devel/py-uranium \
-	${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf \
-	${PYTHON_SITELIBDIR}/PyQt5/QtOpenGL.so:x11/py-qt5-opengl \
-	${PYTHON_SITELIBDIR}/PyQt5/QtQuick.so:x11-toolkits/py-qt5-quick \
+	${PYTHON_PKGNAMEPREFIX}scipy>0:science/py-scipy@${FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}serial>0:comms/py-serial@${FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}uranium=${PORTVERSION}:devel/py-uranium@${FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf@${FLAVOR} \
+	${PYTHON_SITELIBDIR}/PyQt5/QtOpenGL.so:x11/py-qt5-opengl@${FLAVOR} \
+	${PYTHON_SITELIBDIR}/PyQt5/QtQuick.so:x11-toolkits/py-qt5-quick@${FLAVOR} \
 	cura-resources-materials=${PORTVERSION}:cad/cura-resources-materials \
 	cura-binary-data=${PORTVERSION}:cad/cura-binary-data \
 	CuraEngine=${PORTVERSION}:cad/CuraEngine
 TEST_DEPENDS=	${PYTHON_PKGNAMEPREFIX}pytest>0:devel/py-pytest
 
-USES=		python:3.5+ cmake pyqt:5 fortran
+USES=		python:3.5+ cmake pyqt:5 fortran desktop-file-utils shared-mime-info shebangfix
+USE_PYTHON=	flavors
 USE_GCC=	yes
 USE_GITHUB=	yes
 GH_ACCOUNT=	Ultimaker
 USE_PYQT=	svg network qml opengl
+SHEBANG_FILES=	cura_app.py
 INSTALL_TARGET=	install
+python_OLD_CMD=	"/usr/bin/env python3"
+NO_ARCH=	yes
 
 post-install:
 	${RM} -rf ${STAGEDIR}${PREFIX}/lib/cura/plugins/SliceInfoPlugin

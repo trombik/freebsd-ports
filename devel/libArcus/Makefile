@@ -12,9 +12,10 @@ LICENSE=	LGPL3
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
 LIB_DEPENDS=	libprotobuf.so:devel/protobuf
-BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sip>0:devel/py-sip
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sip>0:devel/py-sip
+BUILD_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sip>0:devel/py-sip@${FLAVOR}
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}sip>0:devel/py-sip@${FLAVOR}
 
+USE_PYTHON= flavors
 USE_GITHUB=	yes
 GH_ACCOUNT=	Ultimaker
 USES=	cmake python:3.4+

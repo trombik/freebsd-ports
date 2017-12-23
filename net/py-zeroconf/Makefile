@@ -13,8 +13,8 @@ COMMENT=	Pure python implementation of multicast DNS service discovery
 LICENSE=	LGPL21
 
 RUN_DEPENDS=	\
-	${PYTHON_PKGNAMEPREFIX}netifaces>=0.10.5:net/py-netifaces \
-	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six
+	${PYTHON_PKGNAMEPREFIX}netifaces>=0.10.5:net/py-netifaces@${FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}six>0:devel/py-six@${FLAVOR}
 
 USES=		python
 USE_PYTHON=	autoplist distutils

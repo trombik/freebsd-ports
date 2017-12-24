@@ -21,7 +21,10 @@ LIB_DEPENDS=	libgmp.so:math/gmp \
 		libCGAL.so:math/cgal \
 		libqscintilla2_qt4.so:devel/qscintilla2 \
 		libharfbuzz.so:print/harfbuzz \
-		libopencsg.so:graphics/opencsg
+		libopencsg.so:graphics/opencsg \
+		libboost_thread.so:devel/boost-libs \
+		libfontconfig.so:x11-fonts/fontconfig \
+		libfreetype.so:print/freetype2
 
 CONFLICTS=      openscad-devel
 

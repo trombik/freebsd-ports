@@ -1,8 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	octoprint
-PORTVERSION=	1.3.0.a
-PORTREVISION=	1
+PORTVERSION=	1.3.6
 CATEGORIES=	www python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
@@ -46,8 +45,8 @@ USE_PYTHON=	autoplist distutils
 BROKEN=		checksum mismatch
 
 USE_GITHUB=	yes
-GH_ACCOUNT=	kevans91
-GH_TAGNAME=	37f51ef
+GH_ACCOUNT=	foosel
+#GH_TAGNAME=	37f51ef
 GH_PROJECT=	OctoPrint
 
 USE_RC_SUBR=	octoprint

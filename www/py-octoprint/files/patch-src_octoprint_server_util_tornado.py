@@ -1,4 +1,4 @@
---- src/octoprint/server/util/tornado.py.orig	2017-12-28 05:19:13 UTC
+--- src/octoprint/server/util/tornado.py.orig	2017-12-12 11:42:40 UTC
 +++ src/octoprint/server/util/tornado.py
 @@ -718,7 +718,7 @@ class CustomHTTPServer(tornado.httpserver.HTTPServer):
  				 decompress_request=False,

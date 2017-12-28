@@ -1,0 +1,8 @@
+Emoji terminal output for Python
+
+The entire set of Emoji codes as defined by the unicode consortium is
+supported in addition to a bunch of aliases. By default only the official list
+is enabled but doing emoji.emojize(use_aliases=True) enables both the full
+list and aliases.
+
+WWW: https://pypi.python.org/pypi/emoji

@@ -1,4 +1,4 @@
---- setup.py.orig	2017-12-28 01:35:14 UTC
+--- setup.py.orig	2017-12-12 11:42:40 UTC
 +++ setup.py
 @@ -14,45 +14,45 @@ import octoprint_setuptools
  
@@ -37,10 +37,11 @@
  	"pylru>=1.0.9,<1.1",
 -	"rsa>=3.2,<3.3",
 -	"pkginfo>=1.2.1,<1.3",
+-	"requests>=2.18.4,<3",
+-	"semantic_version>=2.4.2,<2.5",
 +	"rsa>=3.2",
 +	"pkginfo>=1.2.1",
- 	"requests>=2.18.4,<3",
--	"semantic_version>=2.4.2,<2.5",
++	"requests>=2.18.1,<3",
 +	"semantic_version>=2.4.2",
  	"psutil>=5.4.1,<6",
 -	"Click>=6.2,<6.3",

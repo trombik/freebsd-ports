@@ -42,6 +42,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.11.1:www/py-flask@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}dateutil>=2.6.0:devel/py-dateutil \
 		${PYTHON_PKGNAMEPREFIX}wrapt>=1.10.10:devel/py-wrapt \
 		${PYTHON_PKGNAMEPREFIX}futures>=3.1.1:devel/py-futures \
+		${PYTHON_PKGNAMEPREFIX}emoji>=0.4.5:graphics/py-emoji \
 		${PYTHON_PKGNAMEPREFIX}monotonic>=1.3:devel/py-monotonic@${FLAVOR}
 
 USES=		python:2.7

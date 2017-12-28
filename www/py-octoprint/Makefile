@@ -43,7 +43,9 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.11.1:www/py-flask@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}wrapt>=1.10.10:devel/py-wrapt \
 		${PYTHON_PKGNAMEPREFIX}futures>=3.1.1:devel/py-futures \
 		${PYTHON_PKGNAMEPREFIX}emoji>=0.4.5:graphics/py-emoji \
-		${PYTHON_PKGNAMEPREFIX}monotonic>=1.3:devel/py-monotonic@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}monotonic>=1.3:devel/py-monotonic@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pip>0:devel/py-pip@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}backports.ssl_match_hostname>0:security/py-backports.ssl_match_hostname
 
 USES=		python:2.7
 

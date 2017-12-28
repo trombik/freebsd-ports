@@ -1,4 +1,4 @@
---- src/octoprint/plugin/types.py.orig	2017-12-28 07:58:33 UTC
+--- src/octoprint/plugin/types.py.orig	2017-12-12 11:42:40 UTC
 +++ src/octoprint/plugin/types.py
 @@ -1481,7 +1481,7 @@ class SettingsPlugin(OctoPrintPlugin):
  

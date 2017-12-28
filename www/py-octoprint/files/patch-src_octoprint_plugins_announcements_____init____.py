@@ -1,4 +1,4 @@
---- src/octoprint/plugins/announcements/__init__.py.orig	2017-12-28 07:58:33 UTC
+--- src/octoprint/plugins/announcements/__init__.py.orig	2017-12-12 11:42:40 UTC
 +++ src/octoprint/plugins/announcements/__init__.py
 @@ -23,7 +23,7 @@ from collections import OrderedDict
  from octoprint.server import admin_permission

@@ -1,4 +1,4 @@
---- src/octoprint/users.py.orig	2017-12-28 07:58:33 UTC
+--- src/octoprint/users.py.orig	2017-12-12 11:42:40 UTC
 +++ src/octoprint/users.py
 @@ -5,8 +5,8 @@ __author__ = "Gina Häußge <osd@foosel.net>"
  __license__ = 'GNU Affero General Public License http://www.gnu.org/licenses/agpl.html'

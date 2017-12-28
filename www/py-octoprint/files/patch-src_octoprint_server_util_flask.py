@@ -1,4 +1,4 @@
---- src/octoprint/server/util/flask.py.orig	2017-12-28 07:58:33 UTC
+--- src/octoprint/server/util/flask.py.orig	2017-12-12 11:42:40 UTC
 +++ src/octoprint/server/util/flask.py
 @@ -8,9 +8,9 @@ __copyright__ = "Copyright (C) 2014 The OctoPrint Proj
  

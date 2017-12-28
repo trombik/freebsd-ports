@@ -1,4 +1,4 @@
---- src/octoprint/plugins/discovery/__init__.py.orig	2017-12-28 07:58:33 UTC
+--- src/octoprint/plugins/discovery/__init__.py.orig	2017-12-12 11:42:40 UTC
 +++ src/octoprint/plugins/discovery/__init__.py
 @@ -11,7 +11,7 @@ The SSDP/UPNP implementations has been largely inspire
  

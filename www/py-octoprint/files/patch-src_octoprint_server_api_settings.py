@@ -1,4 +1,4 @@
---- src/octoprint/server/api/settings.py.orig	2017-12-28 07:58:33 UTC
+--- src/octoprint/server/api/settings.py.orig	2017-12-12 11:42:40 UTC
 +++ src/octoprint/server/api/settings.py
 @@ -8,7 +8,7 @@ __copyright__ = "Copyright (C) 2014 The OctoPrint Proj
  import logging

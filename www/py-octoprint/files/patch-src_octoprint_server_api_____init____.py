@@ -1,4 +1,4 @@
---- src/octoprint/server/api/__init__.py.orig	2017-12-28 07:58:33 UTC
+--- src/octoprint/server/api/__init__.py.orig	2017-12-12 11:42:40 UTC
 +++ src/octoprint/server/api/__init__.py
 @@ -10,8 +10,8 @@ import netaddr
  import sarge

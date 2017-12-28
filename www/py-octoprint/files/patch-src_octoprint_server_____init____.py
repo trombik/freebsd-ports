@@ -15,6 +15,18 @@
  from babel import Locale
  from watchdog.observers import Observer
  from watchdog.observers.polling import PollingObserver
+@@ -97,9 +97,9 @@ def on_identity_loaded(sender, identity):
+ 		return
+ 
+ 	identity.provides.add(UserNeed(user.get_id()))
+-	if user.is_user():
++	if user.is_user:
+ 		identity.provides.add(RoleNeed("user"))
+-	if user.is_admin():
++	if user.is_admin:
+ 		identity.provides.add(RoleNeed("admin"))
+ 
+ 
 @@ -562,7 +562,7 @@ class Server(object):
  
  		self._tornado_app = Application(handlers=server_routes,

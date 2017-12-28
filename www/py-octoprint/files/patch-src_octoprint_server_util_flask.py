@@ -52,8 +52,9 @@
 -		user = flask.ext.login.current_user
 +		user = flask_login.current_user
  
- 	if user is not None and not user.is_anonymous() and user.is_active():
+-	if user is not None and not user.is_anonymous() and user.is_active():
 -		flask.ext.principal.identity_changed.send(flask.current_app._get_current_object(), identity=flask.ext.principal.Identity(user.get_id()))
++	if user is not None and not user.is_anonymous and user.is_active():
 +		flask_principal.identity_changed.send(flask.current_app._get_current_object(), identity=flask_principal.Identity(user.get_id()))
  		if hasattr(user, "session"):
  			flask.session["usersession.id"] = user.session
@@ -69,6 +70,24 @@
  					return flask.jsonify(user.asDict())
  		except:
  			logger = logging.getLogger(__name__)
+@@ -1031,7 +1031,7 @@ def admin_validator(request):
+ 	"""
+ 
+ 	user = _get_flask_user_from_request(request)
+-	if user is None or not user.is_authenticated() or not user.is_admin():
++	if user is None or not user.is_authenticated or not user.is_admin:
+ 		raise tornado.web.HTTPError(403)
+ 
+ 
+@@ -1046,7 +1046,7 @@ def user_validator(request):
+ 	"""
+ 
+ 	user = _get_flask_user_from_request(request)
+-	if user is None or not user.is_authenticated():
++	if user is None or not user.is_authenticated:
+ 		raise tornado.web.HTTPError(403)
+ 
+ 
 @@ -1059,14 +1059,14 @@ def _get_flask_user_from_request(request):
  	:return: the user or None if no user could be determined
  	"""

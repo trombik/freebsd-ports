@@ -37,18 +37,19 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}Flask>=0.11.1:www/py-flask@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}feedparser>=5.2.1:textproc/py-feedparser@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}chainmap>=1.0.2:devel/py-chainmap@${FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}future>=0.15.2:devel/py-future@${FLAVOR} \
-		${PYTHON_PKGNAMEPREFIX}scandir>=1.3:sysutils/py-scandir@${FLAVOR}
+		${PYTHON_PKGNAMEPREFIX}scandir>=1.3:sysutils/py-scandir@${FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}websocket-client>=0.40:www/py-websocket-client \
+		${PYTHON_PKGNAMEPREFIX}dateutil>=2.6.0:devel/py-dateutil \
+		${PYTHON_PKGNAMEPREFIX}wrapt>=1.10.10:devel/py-wrapt \
+		${PYTHON_PKGNAMEPREFIX}futures>=3.1.1:devel/py-futures \
+		${PYTHON_PKGNAMEPREFIX}monotonic>=1.3:devel/py-monotonic@${FLAVOR}
 
 USES=		python:2.7
 
 USE_PYTHON=	autoplist distutils
-BROKEN=		checksum mismatch
-DEPRECATED=	Broken for more than 6 months
-EXPIRATION_DATE=	2018-01-27
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	foosel
-#GH_TAGNAME=	37f51ef
 GH_PROJECT=	OctoPrint
 
 USE_RC_SUBR=	octoprint

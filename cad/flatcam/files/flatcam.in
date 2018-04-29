@@ -1,0 +1,2 @@
+#!/bin/sh
+(cd %%PREFIX%%/%%PORTNAME%% && %%PYTHON_CMD%% ./flatcam $*)

@@ -1,4 +1,4 @@
-#cad/Cura
+cad/Cura
 #www/py-octoprint
 archivers/rar
 cad/bCNC

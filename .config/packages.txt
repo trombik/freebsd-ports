@@ -3,8 +3,11 @@ cad/Cura
 archivers/rar
 cad/bCNC
 cad/freecad
-cad/kicad
-cad/kicad-library
+cad/kicad-devel
+cad/kicad-library-footprints-devel
+cad/kicad-library-packages3d-devel
+cad/kicad-library-symbols-devel
+cad/kicad-library-templates-devel
 cad/ngspice_rework
 cad/openscad
 cad/Slic3r

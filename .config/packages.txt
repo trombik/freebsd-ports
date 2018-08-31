@@ -10,7 +10,6 @@ cad/kicad-library-symbols-devel
 cad/kicad-library-templates-devel
 cad/ngspice_rework
 cad/openscad
-cad/Slic3r
 cad/solvespace
 devel/avr-gcc
 devel/avr-libc

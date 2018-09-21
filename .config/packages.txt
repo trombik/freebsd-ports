@@ -2,6 +2,7 @@ cad/Cura
 #www/py-octoprint
 archivers/rar
 cad/bCNC
+cad/flatcam
 cad/freecad
 cad/kicad-devel
 cad/kicad-library-footprints-devel

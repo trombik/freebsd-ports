@@ -1,0 +1,22 @@
+--- CMakeLists.txt.orig	2019-03-19 09:54:01 UTC
++++ CMakeLists.txt
+@@ -18,9 +18,9 @@ if(CURA_DEBUGMODE)
+ endif()
+ 
+ set(CURA_APP_DISPLAY_NAME "Ultimaker Cura" CACHE STRING "Display name of Cura")
+-set(CURA_VERSION "master" CACHE STRING "Version name of Cura")
++set(CURA_VERSION "%%PORTVERSION%%" CACHE STRING "Version name of Cura")
+ set(CURA_BUILDTYPE "" CACHE STRING "Build type of Cura, eg. 'PPA'")
+-set(CURA_SDK_VERSION "" CACHE STRING "SDK version of Cura")
++set(CURA_SDK_VERSION "6.0.0" CACHE STRING "SDK version of Cura")
+ set(CURA_CLOUD_API_ROOT "" CACHE STRING "Alternative Cura cloud API root")
+ set(CURA_CLOUD_API_VERSION "" CACHE STRING "Alternative Cura cloud API version")
+ 
+@@ -32,6 +32,7 @@ if(NOT ${URANIUM_DIR} STREQUAL "")
+ endif()
+ if(NOT ${URANIUM_SCRIPTS_DIR} STREQUAL "")
+     list(APPEND CMAKE_MODULE_PATH ${URANIUM_DIR}/cmake)
++    list(APPEND CMAKE_MODULE_PATH %%URANIUM_DATA%%/cmake/Modules)
+     include(UraniumTranslationTools)
+     # Extract Strings
+     add_custom_target(extract-messages ${URANIUM_SCRIPTS_DIR}/extract-messages ${CMAKE_SOURCE_DIR} cura)

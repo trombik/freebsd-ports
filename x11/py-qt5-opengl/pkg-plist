@@ -1,3 +1,6 @@
+%%PYTHON_SITELIBDIR%%/PyQt5/_QOpenGLFunctions_2_0.so
+%%PYTHON_SITELIBDIR%%/PyQt5/_QOpenGLFunctions_2_1.so
+%%PYTHON_SITELIBDIR%%/PyQt5/_QOpenGLFunctions_4_1_Core.so
 %%PYTHON_SITELIBDIR%%/PyQt5/QtOpenGL.so
 %%PYTHON_SITELIBDIR%%/PyQt5/QtOpenGL.pyi
 %%PYQT_SIPDIR%%/QtOpenGL/QtOpenGLmod.sip

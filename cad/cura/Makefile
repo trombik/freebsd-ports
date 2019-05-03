@@ -22,6 +22,7 @@ RUN_DEPENDS=	\
 	${PYTHON_PKGNAMEPREFIX}zeroconf>0:net/py-zeroconf@${FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}requests>0:www/py-requests@${FLAVOR} \
 	${PYTHON_PKGNAMEPREFIX}Shapely>=0:devel/py-shapely@${FLAVOR} \
+	${PYTHON_PKGNAMEPREFIX}libCharon>=${PORTVERSION}:devel/py-libCharon@${FLAVOR} \
 	${PYTHON_SITELIBDIR}/PyQt5/_QOpenGLFunctions_4_1_Core.so:x11/py-qt5-opengl@${FLAVOR} \
 	${PYTHON_SITELIBDIR}/PyQt5/QtQuick.so:x11-toolkits/py-qt5-quick@${FLAVOR} \
 	CuraEngine>=${PORTVERSION}:cad/CuraEngine \

@@ -1,20 +1,17 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
 # $FreeBSD$
 
-PORTNAME=	Color-RGB-Util
-PORTVERSION=	0.596
+PORTNAME=	Test2-Tools-Explain
+PORTVERSION=	0.02
 CATEGORIES=	devel perl5
 MASTER_SITES=	CPAN
+MASTER_SITE_SUBDIR=	CPAN:PETDANCE
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	sunpoet@FreeBSD.org
-COMMENT=	Utilities related to RGB colors
+COMMENT=	Explain tools for Perl Test2 framework
 
-LICENSE=	ART10 GPLv1+
-LICENSE_COMB=	dual
-LICENSE_FILE=	${WRKSRC}/LICENSE
-
-TEST_DEPENDS=	p5-Test-Exception>=0:devel/p5-Test-Exception
+LICENSE=	ART20
 
 USES=		perl5
 USE_PERL5=	configure

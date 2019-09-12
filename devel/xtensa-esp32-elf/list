@@ -1,0 +1,20 @@
+[INFO ]  Retrieving needed toolchain components' tarballs
+[EXTRA]    Retrieving 'autoconf-2.69'
+[EXTRA]    Retrieving 'automake-1.16.1'
+[EXTRA]    Retrieving 'mpfr-4.0.1'
+[EXTRA]    Retrieving 'isl-0.19'
+[EXTRA]    Retrieving 'mpc-1.1.0'
+[EXTRA]    Retrieving 'expat-2.2.5'
+[EXTRA]    Retrieving 'ncurses-6.1'
+[EXTRA]    Retrieving 'binutils-git-461f9c6a'
+[EXTRA]    Retrieving 'binutils-git-461f9c6a' (git https://github.com/espressif/binutils-gdb.git esp32-2019r1_binutils-2_31 461f9c6a)
+[EXTRA]    Using git_shallow_branch = esp32-2019r1_binutils-2_31
+[EXTRA]    Retrieving 'gcc-git-20df92b4'
+[EXTRA]    Retrieving 'gcc-git-20df92b4' (git https://github.com/espressif/gcc.git esp32-2019r1_gcc-8_2_0 20df92b4)
+[EXTRA]    Using git_shallow_branch = esp32-2019r1_gcc-8_2_0
+[EXTRA]    Retrieving 'newlib-git-b9ceb9ff'
+[EXTRA]    Retrieving 'newlib-git-b9ceb9ff' (git https://github.com/espressif/newlib-esp32.git esp32-2019r1_newlib-3_0_0 b9ceb9ff)
+[EXTRA]    Using git_shallow_branch = esp32-2019r1_newlib-3_0_0
+[EXTRA]    Retrieving 'gdb-git-a9ff2591'
+[EXTRA]    Retrieving 'gdb-git-a9ff2591' (git https://github.com/espressif/binutils-gdb.git esp32-2019r1_gdb-8_1 a9ff2591)
+[EXTRA]    Using git_shallow_branch = esp32-2019r1_gdb-8_1

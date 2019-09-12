@@ -1,0 +1,9 @@
+This is a setup of Buildbot steps, factories and configuration helpers that
+give you the best of buildbot and the best of Travis CI:
+
+* Builder configuration that lives with the source code Private builds
+* Private builds
+* non-github SCM support (gerrit, gitlab, github, github enterpris)
+* unlimitted build parallelization on your own infra
+
+WWW: https://github.com/buildbot/buildbot_travis

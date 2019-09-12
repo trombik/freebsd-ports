@@ -1,0 +1,5 @@
+Klein is a micro-framework for developing production-ready web services with
+Python. It is micro in that it has an incredibly small API similar to
+Bottle and Flask.
+
+WWW: https://pypi.python.org/pypi/klein
